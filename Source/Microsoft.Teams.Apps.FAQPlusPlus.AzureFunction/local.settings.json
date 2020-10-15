@@ -1,0 +1,14 @@
+{
+  "IsEncrypted": false,
+  "Values": {
+    "AzureWebJobsStorage": "",
+    "AzureWebJobsDashboard": "",
+    "QnAMakerSubscriptionKey": "",
+    "QnAMakerApiUrl": "https://westus.api.cognitive.microsoft.com",
+    "StorageConnectionString": "",
+    "SearchServiceName": "",
+    "SearchServiceAdminApiKey": "",
+    "SearchServiceQueryApiKey": "",
+    "LanguageQnAMakerSubscriptionKeyJson": "[{'LanguageCode':'en','QnAMakerSubscriptionKey':''},{'LanguageCode':'es','QnAMakerSubscriptionKey':''},{'LanguageCode':'pt','QnAMakerSubscriptionKey':''}]"
+  }
+}

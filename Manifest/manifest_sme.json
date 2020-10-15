@@ -1,0 +1,169 @@
+{
+  "$schema": "https://developer.microsoft.com/en-us/json-schemas/teams/v1.5/MicrosoftTeams.schema.json",
+  "manifestVersion": "1.5",
+  "version": "1.0.0",
+  "id": "1952f343-e610-4aab-be05-34b9faf0ec16",
+  "packageName": "com.microsoft.teams.faqplus.experts",
+  "developer": {
+    "name": "<<companyName>>",
+    "websiteUrl": "<<websiteUrl>>",
+    "privacyUrl": "<<privacyUrl>>",
+    "termsOfUseUrl": "<<termsOfUseUrl>>"
+  },
+  "icons": {
+    "color": "color.png",
+    "outline": "outline.png"
+  },
+  "name": {
+    "short": "FAQ Ternium (Experts Team)"
+  },
+  "description": {
+    "short": "A friendly FAQ bot that answers questions and connects you to experts.",
+    "full": "A friendly question and answer bot that answers commonly asked questions. If it can't answer, it will put you in touch with an expert as soon as they are available."
+  },
+  "accentColor": "#64A2CC",
+  "bots": [
+    {
+      "botId": "<<botId>>",
+      "scopes": [
+        "personal",
+        "team"
+      ],
+      "commandLists": [
+        {
+          "scopes": [
+            "personal"
+          ],
+          "commands": [
+            {
+              "title": "Change language",
+              "description": "Choose from English, Español and Portugués"
+            },
+            {
+              "title": "My questions",
+              "description": "View the status of your questions asked to experts"
+            }
+          ]
+        }
+      ],
+      "supportsFiles": false,
+      "isNotificationOnly": false
+    }
+  ],
+  "staticTabs": [
+    {
+      "entityId": "help",
+      "name": "Help",
+      "contentUrl": "https://<<appDomain>>/help?theme={theme}",
+      "scopes": [
+        "personal"
+      ]
+    }
+  ],
+  "composeExtensions": [
+    {
+      "botId": "<<botId>>",
+      "canUpdateConfiguration": false,
+      "commands": [
+        {
+          "id": "recents",
+          "type": "query",
+          "title": "Recent",
+          "description": "Search recent requests",
+          "parameters": [
+            {
+              "name": "searchText",
+              "title": "Search",
+              "description": "Search by ticket ID or question title"
+            }
+          ],
+          "context": [
+            "compose"
+          ],
+          "initialRun": true
+        },
+        {
+          "id": "openrequests",
+          "type": "query",
+          "title": "Unanswered",
+          "description": "Search requests not yet answered by an expert",
+          "parameters": [
+            {
+              "name": "searchText",
+              "title": "Search",
+              "description": "Search by ticket ID or question title"
+            }
+          ],
+          "context": [
+            "compose"
+          ],
+          "initialRun": true
+        },
+        {
+          "id": "assignedrequests",
+          "type": "query",
+          "title": "Answered",
+          "description": "Search requests answered by an expert",
+          "parameters": [
+            {
+              "name": "searchText",
+              "title": "Search",
+              "description": "Search by ticket ID or question title"
+            }
+          ],
+          "context": [
+            "compose"
+          ],
+          "initialRun": true
+        },
+        {
+          "id": "kbquestions",
+          "type": "query",
+          "title": "Knowledge base",
+          "description": "Search recent requests",
+          "parameters": [
+            {
+              "name": "searchText",
+              "title": "Search",
+              "description": "Search KB QnA pairs"
+            }
+          ],
+          "context": [
+            "compose"
+          ],
+          "initialRun": true
+        },
+        {
+          "id": "addquestion",
+          "type": "action",
+          "title": "Add new question",
+          "description": "Add a new qna pair",
+          "initialRun": true,
+          "fetchTask": true,
+          "context": [
+            "compose",
+            "message"
+          ],
+          "parameters": [
+            {
+              "name": "addquestion",
+              "title": "Add a question",
+              "description": "Add a new qna pair"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "permissions": [
+    "identity",
+    "messageTeamMembers"
+  ],
+  "validDomains": [
+    "<<appDomain>>"
+  ],
+  "webApplicationInfo": {
+    "id": "1952f343-e610-4aab-be05-34b9faf0ec16",
+    "resource": "https://<<appDomain>>"
+  }
+}

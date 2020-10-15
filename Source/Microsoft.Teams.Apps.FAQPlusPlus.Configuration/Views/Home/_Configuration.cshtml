@@ -1,0 +1,45 @@
+﻿@model IEnumerable<Microsoft.Teams.Apps.FAQPlusPlus.Configuration.Models.LanguageKbConfigurationViewModel>
+
+@foreach (var item in Model)
+{
+    using (Ajax.BeginForm("SaveLanguageKbConfigurationDetails", "Home", new AjaxOptions { HttpMethod = "POST", OnSuccess = "onSaveSuccess", OnFailure = "onSaveFailure" }, htmlAttributes: new { @class = "formToSubmit" }))
+    {
+        @Html.AntiForgeryToken()
+
+        <div class="form-group" data-form-name="@item.LanguageCode">
+            <br />
+            <div class="col-lg-1">
+                @Html.DisplayFor(modelItem => item.LanguageCode)
+                @Html.HiddenFor(modelItem => item.LanguageCode)
+            </div>
+            <div class="col-lg-2">
+                @Html.TextBoxFor(modelItem => item.TeamId, htmlAttributes: new { @class = "form-control " + item.LanguageCode + "-teamIdTextBox toggleTextBox", @placeholder = "Enter team ID." })
+                @Html.ValidationMessageFor(modelItem => item.TeamId, "", htmlAttributes: new { @class = "error-message" })
+            </div>
+            <div class="col-lg-2">
+                @Html.TextBoxFor(modelItem => item.KnowledgeBaseId, htmlAttributes: new { @class = "form-control " + item.LanguageCode + "-knowledgeBaseIdTextBox toggleTextBox", @placeholder = "Enter knowledge base ID." })
+                @Html.ValidationMessageFor(modelItem => item.KnowledgeBaseId, "", htmlAttributes: new { @class = "error-message" })
+            </div>
+
+            <div class="col-lg-3">
+                @Html.TextAreaFor(modelItem => item.WelcomeMessage, htmlAttributes: new { @class = "form-control " + item.LanguageCode + "-welcomeMessageIdTextBox toggleTextBox", @placeholder = "Enter welcome message less than 300 characters. Markdown is supported." })
+                @Html.ValidationMessageFor(modelItem => item.WelcomeMessage, "", htmlAttributes: new { @class = "error-message" })
+            </div>
+
+            <div class="col-lg-2">
+                @Html.TextBoxFor(modelItem => item.HelpTabText, htmlAttributes: new { @class = "form-control " + item.LanguageCode + "-helpTabTextIdTextBox toggleTextBox", @placeholder = "Enter help tab text, up to 3000 characters. Markdown is supported." })
+                @Html.ValidationMessageFor(modelItem => item.HelpTabText, "", htmlAttributes: new { @class = "error-message" })
+            </div>
+
+            <div class="col-lg-2">
+                <input type="button" value="OK" class="btn btn-primary toggleToEditButton" id="@item.LanguageCode-SubmitButton" />
+                <span class="glyphicon glyphicon-info-sign infoSignMargin" data-toggle="tooltip" title="@Strings.ToolTipHoverMessage"></span>
+                <span id="@item.LanguageCode-StorageStatusIcon"></span>
+                <div id="@item.LanguageCode-StorageStatusMessage" class="error-message"></div>
+               
+            </div>
+            <div class="col-lg-12 marginBetweenView"></div>
+        </div>
+
+    }
+}

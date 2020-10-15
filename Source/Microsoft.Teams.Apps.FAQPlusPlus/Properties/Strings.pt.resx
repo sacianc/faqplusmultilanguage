@@ -1,0 +1,654 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="AddQuestionSubtitle" xml:space="preserve">
+    <value>Incluir detalhes de nova pergunta</value>
+    <comment>Legenda da parte superior da tarefa enquanto adiciona o novo par P&amp;R.</comment>
+  </data>
+  <data name="AddToKBText" xml:space="preserve">
+    <value>Incluir na Base de Conhecimento</value>
+    <comment>Texto do botão de confirmação ao adicionar resposta a base.</comment>
+  </data>
+  <data name="AnsweredTicketUserNotification" xml:space="preserve">
+    <value>Sua solicitação foi respondida. Caso necessite auxilio adicional, faça nova consulta a um especialista.</value>
+    <comment>Status para notificação ao usuário quando um ticket é respondido por um especialista.</comment>
+  </data>
+  <data name="AnsweredUserNotificationStatus" xml:space="preserve">
+    <value>Respondida.</value>
+    <comment>Status para notificação ao usuário quando um ticket é respondido por um especialista.</comment>
+  </data>
+  <data name="AnswerTitle" xml:space="preserve">
+    <value>**Resposta:**</value>
+    <comment>Texto do rótulo de respota no cartão</comment>
+  </data>
+  <data name="AppendActionMessage" xml:space="preserve">
+    <value>Adicionar a Base de Conhecimento</value>
+    <comment>Mensagem a ser salva na atualização de uma resposta.</comment>
+  </data>
+  <data name="AppendToKBText" xml:space="preserve">
+    <value>Acrescente esta resposta resposta a existente na base de conhecimento</value>
+    <comment>Texto do botão de confirmação ao adicionar resposta a base.</comment>
+  </data>
+  <data name="AskAnExpertButtonText" xml:space="preserve">
+    <value>Consultar um Especialista</value>
+    <comment>Botão de ação que dispara a exibição do cartão Consulte um Especialista</comment>
+  </data>
+  <data name="AskAnExpertDisplayText" xml:space="preserve">
+    <value>Consultar um Especialista</value>
+    <comment>Texto de exibição Consulte um Especialist: texto enviado ao bot quando o botão Consultar Especialista é premido</comment>
+  </data>
+  <data name="AskAnExpertPlaceholderText" xml:space="preserve">
+    <value>Digite aqui detalhadamente a sua pergunta bem como as informações complementares (máximo 500 caracteres)</value>
+    <comment>Texto exemplo para o campo Consulta a um Especialista </comment>
+  </data>
+  <data name="AskAnExpertText2" xml:space="preserve">
+    <value>… se minha resposta não é satisfatória… lhe connectaremos as um especialista.</value>
+    <comment>Informa o usuário que há uma equipe especializada para interagir.</comment>
+  </data>
+  <data name="AskAnExpertTitleText" xml:space="preserve">
+    <value>**Consulte um especilista**</value>
+    <comment>Titulo do cartão Consulte um Especialista</comment>
+  </data>
+  <data name="BackButtonCommandText" xml:space="preserve">
+    <value>BotãodeRetorno</value>
+    <comment>Texto do botão de retrocesso para identificar a ação executada.</comment>
+  </data>
+  <data name="BackButtonText" xml:space="preserve">
+    <value>Retorno</value>
+    <comment>O texto do botão de retrocesso no módulo de tarefa adicionar/editar par P&amp;R, enquanto visualiza o cartão.</comment>
+  </data>
+  <data name="ChangeLanguageHeaderText" xml:space="preserve">
+    <value>Escolha o idioma preferido</value>
+    <comment>Cabeçalho de mudança de idioma</comment>
+  </data>
+  <data name="ChatTextButton" xml:space="preserve">
+    <value>Interaja com {0}</value>
+    <comment>Capacidade de conversar diretamente com o usuário final do canal Especialistas.</comment>
+  </data>
+  <data name="ChatWithExpertButton" xml:space="preserve">
+    <value>Converse  com um especilista via chat</value>
+    <comment>Texto do botão para o botão Converse com Especialista</comment>
+  </data>
+  <data name="CustomMessage" xml:space="preserve">
+    <value>Ao que parece que não tenho uma resposta no meu banco de dados. Posso coloca-lo em contato com um especialista para responder sua pergunta, clique em "Pergunte especialista" para postar sua pergunta ao especialista.</value>
+    <comment>Resposta enviada quado um usuário envia uma pergunta aleatória ao robô.</comment>
+  </data>
+  <data name="CustomMessageHeader" xml:space="preserve">
+    <value>**Eu não conheço a resposta a esta questão!**</value>
+    <comment>Cabeçalho de mensagem quando o usuário faz pergunta aleatória ao bot.</comment>
+  </data>
+  <data name="DateCreatedDisplayFactTitle" xml:space="preserve">
+    <value>**Criado em:**</value>
+    <comment>Criado: um dos rotulos disponíveis para os cartões de notificação - Criado em: é o título que precede a a data de criação.</comment>
+  </data>
+  <data name="DateFactTitle" xml:space="preserve">
+    <value>**Data:**</value>
+    <comment>O rótulo definido para o título para a data de criação no cartão Chamado de Especialista</comment>
+  </data>
+  <data name="DateFormat" xml:space="preserve">
+    <value>{0} as {1}</value>
+    <comment>Usado no formato de exibiçao de data no cartão adaptativo. {0} é para data e {1} é para o hora.</comment>
+  </data>
+  <data name="DeleteButtonText" xml:space="preserve">
+    <value>Remover</value>
+    <comment>Texto do botão de remoção</comment>
+  </data>
+  <data name="DeleteConfirmation" xml:space="preserve">
+    <value>Está certo de que deseja excluir esse item? Tanto a pergunta como a resposta associada serão  apagadas.</value>
+    <comment>Mensagem de confirmação de Exclusão</comment>
+  </data>
+  <data name="DeletedQnaPair" xml:space="preserve">
+    <value>Excluido por {0}</value>
+    <comment>Texto exibido no cartão quando um par P&amp;R é excluído.</comment>
+  </data>
+  <data name="DescriptionFact" xml:space="preserve">
+    <value>**Descrição:**</value>
+    <comment>Campo  exibido em notificações a usuários e cartões para Especialista.</comment>
+  </data>
+  <data name="DescriptionLabel" xml:space="preserve">
+    <value>Description</value>
+    <comment>Cabeçalho do campo no cartão de Consulta a um Especialistas.</comment>
+  </data>
+  <data name="DescriptionLabelText" xml:space="preserve">
+    <value>Resposta detalhada</value>
+    <comment>Texto do rótulo da caixa de texto de descrição.</comment>
+  </data>
+  <data name="DescriptionPlaceholderText" xml:space="preserve">
+    <value>Digite sua pergunta aqui</value>
+    <comment>Texto exemplo pré-populado no campo</comment>
+  </data>
+  <data name="DescriptionText" xml:space="preserve">
+    <value>**Descrição:**</value>
+    <comment>Texto do rótulo para descrição</comment>
+  </data>
+  <data name="EditButtonText" xml:space="preserve">
+    <value>Editar</value>
+    <comment>Texto do botão de Edição</comment>
+  </data>
+  <data name="EditQuestionSubtitle" xml:space="preserve">
+    <value>Editar detalhes da pergunta</value>
+    <comment>A legenda no módulo superior da tarefa durante a edição do par QnA.</comment>
+  </data>
+  <data name="EmptyDescriptionErrorText" xml:space="preserve">
+    <value>Descrção não pode esatr em branco.</value>
+    <comment>Mensagem de erro para indicar que a caixa de texto Descrição está vazia ao se adicionar ou editar o par P&amp;R.</comment>
+  </data>
+  <data name="EmptyQuestionErrorText" xml:space="preserve">
+    <value>Texto da pergunta não pode estar em branco.</value>
+    <comment>Mensagem de erro para indicar que a caixa de texto da Consulta está vazia ao se adicionar ou editar o par P&amp;R.</comment>
+  </data>
+  <data name="EnglishButtonText" xml:space="preserve">
+    <value>inglês</value>
+    <comment>Texto do rótulo do botão de seleção para o idioma inglês</comment>
+  </data>
+  <data name="EntryCreatedByText" xml:space="preserve">
+    <value>Criado por</value>
+    <comment>Mensagem exibida no cartão adaptativo após se adicionar par P&amp;R.</comment>
+  </data>
+  <data name="ErrorMessage" xml:space="preserve">
+    <value>Algo saiu errado. Por favor, tente novamente em alguns minutos.</value>
+    <comment>Mensagem de erro para informar que ocorru uma exceção</comment>
+  </data>
+  <data name="ExistingAnswerFactTitle" xml:space="preserve">
+    <value>**Resposta existente:**</value>
+    <comment>Cabeçalho para seção que mostra a resposta existente na base de conhecimento no cartão de consulta ao especialista.
+</comment>
+  </data>
+  <data name="FeedbackDescriptionPlaceholderText" xml:space="preserve">
+    <value>Gostariamos de ter mais detalhes sobre o seu comentário</value>
+    <comment>Texto pré-existente para a entrada de comentário por parte do usuário</comment>
+  </data>
+  <data name="FeedbackRatingRequired" xml:space="preserve">
+    <value>A resposta foi útil?</value>
+    <comment>Rótulo para a opção de avaliação do dropdown</comment>
+  </data>
+  <data name="FeedbackText1" xml:space="preserve">
+    <value>Diga à nossa equipe de especialistas como estou indo para que eles possam me ajudar a melhorar.</value>
+    <comment>Texto informando que o usuário é convidado a compartilhar sua opinião sobre a experiência de uso do bot. </comment>
+  </data>
+  <data name="FunctionCardText1" xml:space="preserve">
+    <value>Faça uma pergunta</value>
+    <comment>Explica as funções do bot e mostra possiveis perguntas</comment>
+  </data>
+  <data name="FunctionCardText2" xml:space="preserve">
+    <value>Você pode me fazer uma pergunta digitando na caixa de bate-papo abaixo eu vou me esforçar respondê-la...</value>
+    <comment>Convida o usuário a enviar uma pergunta</comment>
+  </data>
+  <data name="GoToOriginalThreadButtonText" xml:space="preserve">
+    <value>Voltar a discussão anterior</value>
+    <comment>Botão para retornar a discussão anterior, disponível no cartão de extensão de mensagens.</comment>
+  </data>
+  <data name="GoToThread" xml:space="preserve">
+    <value>Ver detalhes</value>
+    <comment>Rótulo do botão para cartão criado através de extensão de mensagens</comment>
+  </data>
+  <data name="HelpfulRatingText" xml:space="preserve">
+    <value>Útil</value>
+    <comment>Útil; opção disponivel na escala de avaliação</comment>
+  </data>
+  <data name="HTMLErrorText" xml:space="preserve">
+    <value>As tags HTML não são suportadas. </value>
+    <comment>Mensagem de erro exibida se tags HTML forem inseridas em qualquer campo ao se adicionar ou editar um par P&amp;R.</comment>
+  </data>
+  <data name="ImageLabelText" xml:space="preserve">
+    <value>URL de imagem (opcional)</value>
+    <comment>Rótulo para o campo URL da imagem</comment>
+  </data>
+  <data name="ImageUrlPlaceholderText" xml:space="preserve">
+    <value>Colar url de imagem aqui</value>
+    <comment>Texto pré-existente para a entrada da URL correspondente a imagem  por parte do usuário</comment>
+  </data>
+  <data name="InvalidImageUrlErrorText" xml:space="preserve">
+    <value>Image URL is not valid.</value>
+    <comment>Mensagem de erro indicando que URL de imagem não é válida ao se adicionar ou editar o par P&amp;R.</comment>
+  </data>
+  <data name="LanguageSelectionContent" xml:space="preserve">
+    <value>Certo! Escreva sua pergunta na janela de  bate-papo e eu o ajudarei imediatamente.</value>
+    <comment>Mensagem de seleção de idioma</comment>
+  </data>
+  <data name="LastEditedText" xml:space="preserve">
+    <value>Última edição por </value>
+    <comment>Mensagem exibida no cartão adaptativo após a edição do par P&amp;R.</comment>
+  </data>
+  <data name="MandatoryAnswerFieldText" xml:space="preserve">
+    <value>O campo de resposta é obrigatório. </value>
+    <comment>Texto orientando os usuários a preencherem os campos obrigatórios.</comment>
+  </data>
+  <data name="MandatoryTitleFieldText" xml:space="preserve">
+    <value>O campo de títulos é obrigatório</value>
+    <comment>Texto orientando os usuários a preencherem os campos obrigatórios.</comment>
+  </data>
+  <data name="ManuallyAddedQuestionMessage" xml:space="preserve">
+    <value>Pergunta adicionada manualmente </value>
+    <comment>Informativo de que par P&amp;R foi manualmente adicionado ao QnA Maker</comment>
+  </data>
+  <data name="MyQuestionLabelText" xml:space="preserve">
+    <value>Minhas perguntas</value>
+    <comment>Rótulo do  texto para a aba de perguntas do usuário.</comment>
+  </data>
+  <data name="MyQuestionNotificationCardContent" xml:space="preserve">
+    <value>Você pode consultar as perguntas respondidas por especialistas na aba "Minhas perguntas".</value>
+    <comment>Orientação ao usuário exibida no cartão.</comment>
+  </data>
+  <data name="NeedsImprovementRatingText" xml:space="preserve">
+    <value>Requer melhorias</value>
+    <comment>Requer Melhoria; opção disponivel na escala de avaliação</comment>
+  </data>
+  <data name="No" xml:space="preserve">
+    <value>Não</value>
+    <comment>Rótulo do botão Não no cartão de confirmação do par P&amp;R..</comment>
+  </data>
+  <data name="NonSMEErrorText" xml:space="preserve">
+    <value>A extensão de mensagens só pode ser chamada a partir do canal em que o aplicativo está instalado.</value>
+    <comment>Mensagem de erro dispara quando um usuário não-especialita tenta acessar a extensão de mensagens
+</comment>
+  </data>
+  <data name="NotHelpfulRatingText" xml:space="preserve">
+    <value>Não foi útil</value>
+    <comment>Não foi útil: resposta disponível na escala de avaliação</comment>
+  </data>
+  <data name="NotificationCardContent" xml:space="preserve">
+    <value>**Eu enviei sua pergunta aos especialistas**</value>
+    <comment>Mensagem de confirmação para o usuário ao enviar consulta ao especialista.</comment>
+  </data>
+  <data name="NotificationCardDetailContent" xml:space="preserve">
+    <value>Sua consulta foi compartilhada com os especialistas, eu farei contato com você para atualizações.</value>
+    <comment>Mensagem de confirmação para o usuário ao enviar consulta ao especialista.</comment>
+  </data>
+  <data name="PortugueseButtonText" xml:space="preserve">
+    <value>Portugués</value>
+    <comment>Rótulo para o botão de seleção do idioma português</comment>
+  </data>
+  <data name="PreviewButtonText" xml:space="preserve">
+    <value>Pré-visualizar</value>
+    <comment>Texto do botão de Pré-visualização</comment>
+  </data>
+  <data name="PreviewCardHeaderMessage" xml:space="preserve">
+    <value>Eis uma prévia da entrada na base de conhecimento</value>
+    <comment>Texto da mensagem do cartão de pré-visualização </comment>
+  </data>
+  <data name="ProvidedByFact" xml:space="preserve">
+    <value>**Fornecido por:**</value>
+    <comment>Informação de procedência da informação exibida no cartão </comment>
+  </data>
+  <data name="QuestionAlreadyExistsErrorText" xml:space="preserve">
+    <value>A pergunta já existe na base. por favor, adicione uma pergunta diferente.</value>
+    <comment>Mensagem de erro indica que a pergunta já existe na base de conhecimento ao adicionar ou editar o par P&amp;R..</comment>
+  </data>
+  <data name="QuestionAskedByFactTitle" xml:space="preserve">
+    <value>**Autor:**</value>
+    <comment>Cabeçalho de seção (autor) para consultas enviadas através do Cartão Consulta ao especilialista</comment>
+  </data>
+  <data name="QuestionLabelText" xml:space="preserve">
+    <value>Consulta</value>
+    <comment>Rótulo da Caixa de texto para campo de digitação das perguntas</comment>
+  </data>
+  <data name="QuestionMessageFeedbackText" xml:space="preserve">
+    <value>**Consulta:**</value>
+    <comment>Texto de mensagem em Cartão de comentários</comment>
+  </data>
+  <data name="QuestionPlaceholderText" xml:space="preserve">
+    <value>Digite aquiui sua consulta (Max 300 caracters)</value>
+    <comment>Texto pré-existente na caixa de texto para a digitação da consulta</comment>
+  </data>
+  <data name="QuestionTitle" xml:space="preserve">
+    <value>**Consulta:** {0}</value>
+    <comment>Rótulo para o texto da Consulta</comment>
+  </data>
+  <data name="RatingMandatoryText" xml:space="preserve">
+    <value>A avaliação é requerida</value>
+    <comment>Avalaição é requerida, mensagem de alerta mostrado ao usuário quando a avaliação não é preenchida ao compartilhar o feedback da atividade.</comment>
+  </data>
+  <data name="RatingTitle" xml:space="preserve">
+    <value>**Avaliação:**</value>
+    <comment>Avaliação - é usado no cartão de feedback voltado aos especialistas,  para mostrar a avaliação enviada pelo usuário a partir das opções apresentadas no cartão para envio de feedback.
+</comment>
+  </data>
+  <data name="RespondButtonText" xml:space="preserve">
+    <value>Responder</value>
+    <comment>Rótulo do botão de Resposta no cartão de resposta à Consulta ao Especialista.</comment>
+  </data>
+  <data name="ResponsePlaceholderText" xml:space="preserve">
+    <value>Escreva sua resposta aqui</value>
+    <comment>Texto pré-existente para a digitação da resposta pelo especialista</comment>
+  </data>
+  <data name="SaveButtonText" xml:space="preserve">
+    <value>Salvar</value>
+    <comment>Texto do botão Salvar para o par P&amp;R</comment>
+  </data>
+  <data name="SendFeedbackButtonText" xml:space="preserve">
+    <value>Enviar comentários</value>
+    <comment>Texto do botão de envio de comentários no cartão de submissão de comentários</comment>
+  </data>
+  <data name="SendFeedbackDisplayText" xml:space="preserve">
+    <value>Enviar comentários</value>
+    <comment>Texto apresentado no envio de comentários no cartão de submissão de comentários</comment>
+  </data>
+  <data name="ShareFeedbackButtonText" xml:space="preserve">
+    <value>Comentários</value>
+    <comment>Rótulo do botão para compartilhar comentários mostrado no cartão de feedback no cartão de resposta QnA.
+</comment>
+  </data>
+  <data name="ShareFeedbackDisplayText" xml:space="preserve">
+    <value>Comentários</value>
+    <comment>Texto exibido no envio de comentários: texto enviado ao bot quando o botão de envio de comentários é clicado.</comment>
+  </data>
+  <data name="ShareFeedbackTitleText" xml:space="preserve">
+    <value>Compartilhar comentário sobre a aplicação</value>
+    <comment>Texto do título de compartilhamento feedback no carrosel do cartão do usuário.
+</comment>
+  </data>
+  <data name="ShowCardTitleText" xml:space="preserve">
+    <value>Digite título curto (50 caracteres no máximo)</value>
+    <comment>Cabeçalho do campo de texto para digitação pelos usuários do título para sua dúvida ou comentário.</comment>
+  </data>
+  <data name="SMEAnsweredResponseStatus" xml:space="preserve">
+    <value>{0} respondeu à pergunta, esta foi marcada como respondida.</value>
+    <comment>Mensagem postada na conversa quando a requisição é respondido. {0} = nome do Especialista que respondeu a requisiçãp</comment>
+  </data>
+  <data name="SMEAnsweredUpdateStatus" xml:space="preserve">
+    <value>{0} respondeu e atualizou a resposta na base de conhecimento.</value>
+    <comment>Messagem postada na discussão em curso quando consultas são  respondidas ou atualizadas na base de conhecimento. {0} = nome do especialista  que respondeu a requisição.</comment>
+  </data>
+  <data name="SMEFeedbackHeaderText" xml:space="preserve">
+    <value>**Comentários recebidos**</value>
+    <comment>Cabeçalho de notificação para o cartão de feedback na visão do Especialista.</comment>
+  </data>
+  <data name="SMEFeedbackTicketIDFact" xml:space="preserve">
+    <value>ID #{0} | {1}</value>
+    <comment>O formato de identificação de consultas no cartão de feedback do especialista</comment>
+  </data>
+  <data name="SMEReplyCardAnswerByExpert" xml:space="preserve">
+    <value>Respondida pelo especialista
+{0}</value>
+    <comment>Resposta enviada pelo especialista que será exibida no cartão. {0} representa resposta.</comment>
+  </data>
+  <data name="SMEReplyCardFooterMessage" xml:space="preserve">
+    <value>Espero que a resposta tenha sido útil para você. Sua consulta foi marcada como respondida, se você ainda precisar de assistência em relação à pergunta, sinta-se livre para conversar com o especialista.</value>
+    <comment>Mensagem exibida a abaixo do cartão com a resposta do especialista.</comment>
+  </data>
+  <data name="SMEReplyCardHeaderText" xml:space="preserve">
+    <value>**ID #{0} | Especialista respondeu sua consulta**</value>
+    <comment>Cabeçalho do cartão de resposta enviado ao usuário pelo especialista.</comment>
+  </data>
+  <data name="SMETicketActualQuestionInKBText" xml:space="preserve">
+    <value>Dúvida respondida na Base de Conhecimento: {0}</value>
+    <comment>Cabeçalho secundário do cartão de solicitação ao Especialista exibindo a pergunta original na base de conhecimento.</comment>
+  </data>
+  <data name="SMETicketAnsweredAndUpdatedStatus" xml:space="preserve">
+    <value>Respondida e atualizada por {0}</value>
+    <comment>Status da consulta ao Especialista publicado quando a consulta é respondida e atualizada - {0} representa o especialsta.</comment>
+  </data>
+  <data name="SMETicketAnsweredStatus" xml:space="preserve">
+    <value>Respondida por {0}</value>
+    <comment>Status da consulta ao Especialista publicado quando a consulta é respondida - {0} representa o especialsta.</comment>
+  </data>
+  <data name="SMETicketCardYourAnswerLabel" xml:space="preserve">
+    <value>Sua resposta</value>
+    <comment>Rótulo do cartão SMETicket para indicar a resposta do Especialista.</comment>
+  </data>
+  <data name="SMETicketHeaderText" xml:space="preserve">
+    <value>**ID #{0} | {1}**</value>
+    <comment>Texto do cabeçalho do cartão de consulta ao especialista.</comment>
+  </data>
+  <data name="SMETicketNoQuestionInKBText" xml:space="preserve">
+    <value>Nenhuma pergunta semelhante encontrada na base de conhecimento</value>
+    <comment>O subcabeçalho do cartão de consulta a especilista, quando a questão não é encontrada na base de conhecimento.</comment>
+  </data>
+  <data name="SMETicketUnansweredStatus" xml:space="preserve">
+    <value>Não respondida</value>
+    <comment>Status da consulta ao Especialista que é exibido enquanto a consulta não é respondida.</comment>
+  </data>
+  <data name="SMEUserChatMessage" xml:space="preserve">
+    <value>RE: {0}</value>
+    <comment>O {0} é o espaço reservado para o título que o usuário havia fornecido ao pedir auxilio a um especialista.</comment>
+  </data>
+  <data name="SpanishButtonText" xml:space="preserve">
+    <value>Espanhol</value>
+    <comment>Rótulo para o botão de seleção do idioma espanhol</comment>
+  </data>
+  <data name="StatusFactTitle" xml:space="preserve">
+    <value>**Status:**</value>
+    <comment>Status, um dos rótulos disponíveis em um  cartões de notificação.</comment>
+  </data>
+  <data name="SubmitResponseButtonText" xml:space="preserve">
+    <value>Enviar resposta</value>
+    <comment>Botão de comando para salvar a resposta enviada pelo Especialista.</comment>
+  </data>
+  <data name="SuggestedText" xml:space="preserve">
+    <value>Os campos de texto suportam o uso de marcação</value>
+  </data>
+  <data name="TakeATeamTourButtonText" xml:space="preserve">
+    <value>Tour da Equipe</value>
+    <comment>Botão de ação que leva a exibição das funcionalidades do bot para a Equipe.</comment>
+  </data>
+  <data name="TakeATourButtonText" xml:space="preserve">
+    <value>Faça um tour</value>
+    <comment>Botão Faça um Tour - disponível para os usuários no cartão de boas-vindas, através do qual o usuário pode fazer um tour sobre funcionalidades da aplicação no escopo pessoal.</comment>
+  </data>
+  <data name="TeamChatContent" xml:space="preserve">
+    <value>Clique no botão "conversar com o usuário" para iniciar um bate-papo direto.</value>
+    <comment>Conteúdo do carrosel de cartão de bate-papo da equipe- de onde os membros da equipe de especialistas podem iniciar conversas diretas com os usuários.</comment>
+  </data>
+  <data name="TeamChatHeaderText" xml:space="preserve">
+    <value>Iniciar a conversa  com usuários finais</value>
+    <comment>Cabeçalho do Carrossel de bate-papo da equipe.</comment>
+  </data>
+  <data name="TeamCustomMessage" xml:space="preserve">
+    <value>Olá, eu não respodo comandos de bot na Equipe. A seguir uma rápida mostra de como eu posso ajudar.</value>
+    <comment>Mensagem mostrada quando o membro da equipe de especialistas envia perguntas a aplicação, uma mensagem é exibida orientando o membro da equipe a instalar a aplicação no escopo pessoal.
+</comment>
+  </data>
+  <data name="TeamNotificationContent" xml:space="preserve">
+    <value>Você pode ver com o que os usuários precisam de ajuda.</value>
+    <comment>O conteúdo do cartão de função carrossel da equipe pode levantar as dúvidas dos usuários através do bot.</comment>
+  </data>
+  <data name="TeamNotificationHeaderText" xml:space="preserve">
+    <value>Receber notificações de usuários finais</value>
+    <comment>Título do cartão de bate-papo na função de carrosel de conteúdo. </comment>
+  </data>
+  <data name="TeamTicketSystemContent" xml:space="preserve">
+    <value>Marque pedidos respondidos ou sem resposta para acompanhar as consultas.</value>
+    <comment>O conteúdo dos cartões no carrosel de consulta permite que a equipe acompanhe as solicitações dos usuários.
+</comment>
+  </data>
+  <data name="TeamTicketSystemHeaderText" xml:space="preserve">
+    <value>Gerenciar consultas</value>
+    <comment>Título do carrosel de acompanhamento de consultas .</comment>
+  </data>
+  <data name="ThankYouTextContent" xml:space="preserve">
+    <value>Muito obrigado pelo comentário!</value>
+    <comment>O conteúdo do cartão de agradecimento que é exibido sempre que o usuário envia comentários no aplicativo ou em uma resposta gerada pelo serviço QnA.
+</comment>
+  </data>
+  <data name="TicketIDFact" xml:space="preserve">
+    <value>**TicketID:**</value>
+    <comment>Usado para mostrar o id do chamado gerado para a consulta..
+</comment>
+  </data>
+  <data name="TitleFact" xml:space="preserve">
+    <value>**Titulo:**</value>
+    <comment>Campo usado para exibir o título digitado pelo usuário para a consulta</comment>
+  </data>
+  <data name="TitleLabelText" xml:space="preserve">
+    <value>Título da Resposta</value>
+    <comment>Texto do rótulo da caixa de texto de título.</comment>
+  </data>
+  <data name="TitlePlaceholderText" xml:space="preserve">
+    <value>Digite o seu título aqui</value>
+    <comment>Texto exemplo de preenchimento para caixa de texto do Tíítulo.</comment>
+  </data>
+  <data name="TitleRequiredText" xml:space="preserve">
+    <value>Título (requerido)</value>
+    <comment>Título (Obrigatório): rótulo da caixa de texto do campo Título.</comment>
+  </data>
+  <data name="UnAnsweredUserNotificationStatus" xml:space="preserve">
+    <value>Sem resposta</value>
+    <comment>O valor de status para a notificação do usuário quando uma requisição não é respondido.</comment>
+  </data>
+  <data name="UpdateExistingButtonText" xml:space="preserve">
+    <value>Atualizar resposta existente</value>
+    <comment>Texto do botão de atualização de resposta existente no cartão de resposta do especialista</comment>
+  </data>
+  <data name="UpdateHistoryButtonText" xml:space="preserve">
+    <value>Atualizar histórico</value>
+    <comment>Texto do botão Atualizar histórico</comment>
+  </data>
+  <data name="UpdateHistoryDateHeaderText" xml:space="preserve">
+    <value>Data</value>
+    <comment>Texto para o cabeçalho de data no texto do cartão adaptativo do histórico de atualização.</comment>
+  </data>
+  <data name="UpdateHistoryHeadersText" xml:space="preserve">
+    <value>Nome|Ação|Data</value>
+    <comment>Texto de cabeçalho para cartão adaptador de histórico de atualização. que mostra o histórico de ações realizadas pelos usuários em um par QnA.</comment>
+  </data>
+  <data name="ViewArticleButtonText" xml:space="preserve">
+    <value>Ver resposta</value>
+    <comment>A sequência necessária para o botão de artigo de exibição</comment>
+  </data>
+  <data name="WaitMessage" xml:space="preserve">
+    <value>Por favor, aguarde alguns instantes, atualizações para esta pergunta: "{0}" estarão disponíveis em alguns instantes.</value>
+    <comment>Aguarde mensagem para mostrar abaixo o cartão adaptativo enquanto tenta excluir a pergunta e não está disponível na base de conhecimentos de produção e esperando para ser publicado.</comment>
+  </data>
+  <data name="WaitMessageAnswer" xml:space="preserve">
+    <value>Nota: Atualizações ocorrem a intervalos regulrares</value>
+    <comment>Mensagem exibida no cartão adaptativo após se realizar qualquer ação no par P&amp;R.</comment>
+  </data>
+  <data name="WarningMessageOnUpdateAnswer" xml:space="preserve">
+    <value>Sua resposta será atualizada na base de conhecimento, bem como será enviada ao solicitante.</value>
+    <comment>Mensagem de alerta a ser exibida ao especialista na atualização de uma resposta existente.</comment>
+  </data>
+  <data name="WelcomeEnglishContent" xml:space="preserve">
+    <value>Oi! Eu sou o Faq bot, eu posso ajudá-lo esclarecendo suas dúvidas relacionadas ao seu aprendizado sobre a plataforma Teams. Por favor, selecione o idioma no qual deseja continuar.</value>
+    <comment>Mensagem de boas-vindas em inglês quando o bot é adicionado ao novo chat pessoal.</comment>
+  </data>
+  <data name="WelcomeHeaderText" xml:space="preserve">
+    <value>Bem-vindo!</value>
+    <comment>Mensagem de boas-vindas</comment>
+  </data>
+  <data name="WelcomeTeamCardContent" xml:space="preserve">
+    <value>Olá equipe,   
+Sou um robô amigável de Perguntas e Respostas que lhe apoiará para fornecer suporte às pessoas que interagem comigo e necessaitarem de assistência suplementar.</value>
+    <comment>Mensagem de boas-vindas quando o bot é adicionado a uma nova equipe.</comment>
+  </data>
+  <data name="Yes" xml:space="preserve">
+    <value>Sim</value>
+    <comment>Texto do botão de confirmação para  exclusão de par de Pergunta e Resposta</comment>
+  </data>
+</root>

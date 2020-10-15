@@ -1,0 +1,336 @@
+﻿.mainComponent {
+    height: 107% !important;
+    overflow-y: hidden;
+
+    .formContainer {
+        width: 100%;
+        margin-top: 0.8rem;
+        overflow-y: hidden;
+        height: 90% !important;
+
+        .formContentContainer {
+            margin-top: 0rem;
+            margin-bottom: 0.8rem;
+            overflow-y: auto !important;
+            height: 93% !important;
+            width: 98%;
+        }
+    }
+
+    .footerContainer {
+        position: fixed !important;
+        bottom: 0;
+        left: 0;
+        padding: 0 !important;
+        width: 100%;
+
+        .hiddenLoader {
+            display: none;
+        }
+
+        .savingLoader {
+            float: left;
+            width: 15rem;
+            height: 3rem;
+        }
+
+        .errorMessage {
+            float: left;
+            width: 28rem;
+            height: 3rem;
+        }
+
+        .errorHidden {
+            display: none;
+        }
+
+        .buttonContainer {
+            display: inline;
+            float: right;
+            margin-right: 3.2rem;
+            padding-bottom: 1rem;
+
+            #saveBtn {
+                margin-left: 0.8rem;
+            }
+        }
+    }
+}
+
+.ui-dropdown__container {
+    width: 10rem;
+}
+
+.pagingSegment {
+    padding: 0 !important;
+}
+
+.marginZero ul {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.marginZero {
+    box-shadow: none !important;
+    margin-top: 2px;
+}
+
+.paddingRight {
+    padding-right: 12px;
+}
+
+.emptydiv {
+    text-align: center;
+    padding-top: 200px;
+    padding-bottom: 200px;
+}
+
+.textstyle {
+    padding-left: 0px;
+    padding-right: 5px;
+    max-width: 350px;
+}
+
+.divstyle {
+    width: 100px;
+}
+
+.filterstyle {
+    width: 15px;
+    height: 15px;
+    margin-top: 6px;
+    padding-left: 20px;
+}
+
+.seperatorSpacing {
+    margin-left: 0.625rem;
+}
+
+.activeClass {
+    color: #86ba43;
+    width: 15px !important;
+    padding-right: 5px;
+}
+
+.closedClass {
+    color: #8c8e9e;
+    width: 15px !important;
+    padding-right: 5px;
+}
+
+.unassignedClass {
+    color: #c4314b;
+    width: 15px !important;
+    padding-right: 5px;
+}
+
+.backGroundColor {
+    background-color: #f3f2f1 !important;
+}
+
+.backGroundColor ul {
+    background-color: #f3f2f1 !important;
+}
+
+.whiteColor input {
+    background-color: white !important;
+}
+
+.segmentStyle {
+    padding: 0 !important;
+    margin: 0 !important;
+}
+
+.segmentHeaderStyle {
+    padding: 0 !important;
+    margin: 0 !important;
+    border-top-width: 0!important;
+}
+
+.rowStyle {
+    cursor: pointer;
+    display: table;
+    width: 100%;
+
+    .checkColumn {
+        display: inline;
+        float: left;
+        width: 66px;
+        padding: 14px;
+    }
+
+    .ticketIdColumn {
+        display: inline;
+        float: left;
+        width: 161.11px;
+        padding: 14px;
+    }
+
+    .titleColumn {
+        display: inline;
+        float: left;
+        width: 285.05px;
+        padding: 14px;
+    }
+
+    .descriptionColumn {
+        display: inline;
+        float: left;
+        width: 408.98px;
+        padding: 14px;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+
+    .dateColumn {
+        display: inline;
+        float: left;
+        width: 161.11px;
+        padding: 14px;
+    }
+
+    .statusColumn {
+        display: inline;
+        float: left;
+        width: 161.11px;
+        padding: 14px;
+    }
+
+    .deleteColumn {
+        display: inline;
+        float: left;
+        width: 40px;
+        padding: 14px;
+    }
+}
+
+.rowStyle:hover {
+    background-color: #8183b9;
+    cursor: pointer;
+    color: white !important;
+}
+
+.headerRow {
+    width: 98%;
+}
+
+.headerRowStyle {
+    display: table;
+    width: 101%;
+    background-color: #f3f2f1;
+
+    .checkColumn {
+        display: inline;
+        float: left;
+        width: 66px;
+        padding-left: 14px;
+        padding-top: 8px;
+    }
+
+    .ticketIdColumn {
+        display: inline;
+        float: left;
+        width: 161.11px;
+        padding: 9px;
+    }
+
+    .titleColumn {
+        display: inline;
+        float: left;
+        width: 285.05px;
+        padding: 9px;
+    }
+
+    .descriptionColumn {
+        display: inline;
+        float: left;
+        width: 408.98px;
+        padding: 9px;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+
+    .dateColumn {
+        display: inline;
+        float: left;
+        width: 161.11px;
+        padding: 9px;
+    }
+
+    .statusColumn {
+        display: inline;
+        float: left;
+        width: 161.11px;
+        padding: 9px;
+    }
+
+    .deleteColumn {
+        display: inline;
+        float: left;
+        width: 48.6px;
+        padding: 9px;
+    }
+}
+
+.pointer {
+    cursor: pointer;
+}
+
+.selectedBackgroundColor:hover {
+    background-color: #8b8cc7 !important;
+}
+
+.headerStyle {
+    height: 36px;
+}
+
+.width_dropdown {
+    width: 210px;
+
+    .ui-dropdown__container {
+        background-color: white;
+    }
+}
+
+.width_Search {
+    width: 290px;
+}
+
+.width_Search span {
+    padding-right: 7px;
+}
+
+.width_Search input {
+    width: 278px;
+}
+
+.defaultContainer {
+    height: 100vh !important;
+    background-color: #f3f2f1 !important;
+}
+
+.paddingFooter {
+    padding-right: 22px !important;
+}
+
+.AnswerbySMEHeaderText {
+    font-weight: bold;
+    font-size: smaller;
+}
+
+.AnswerbySMEText {
+    font-size: smaller;
+    width: 100%;
+    word-break: break-word;
+}
+
+.trashIconStyle {
+    color: #c8c6c4 !important;
+}
+
+.imgStyle {
+    width: 15px;
+    height: 15px;
+}
